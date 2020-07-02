@@ -26,7 +26,7 @@
         /// Método necessário para suporte ao Designer - não modifique 
         /// o conteúdo deste método com o editor de código.
         /// </summary>
-        private void InitializeComponent()
+        private new void InitializeComponent()
         {
             this.TXTIdEleicao = new System.Windows.Forms.TextBox();
             this.Codigo = new System.Windows.Forms.Label();

@@ -59,12 +59,45 @@ namespace PadraoDeProjetoEmCamadas
 
         private void votoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRelatorioVoto f = new frmRelatorioVoto(this);
+            frmRelatorioEleicao f = new frmRelatorioEleicao(this);
             f.ShowDialog();
             f.Dispose();
             this.Text = "Menu";
         }
 
-        
+        private void candidatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroCandidatos f = new frmCadastroCandidatos(this);
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+        }
+
+        private void urnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroUrna f = new frmCadastroUrna(this);
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+
+
+        }
+
+        private void votoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmCadastroVoto f = new frmCadastroVoto(this);
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+
+        }
+
+        private void eleitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroEleitores f = new frmCadastroEleitores(this);
+            f.ShowDialog();
+            f.Dispose();
+            this.Text = "Menu";
+        }
     }
 }

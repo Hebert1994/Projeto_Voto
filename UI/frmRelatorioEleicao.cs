@@ -13,25 +13,22 @@ using System.Windows.Forms;
 
 namespace PadraoDeProjetoEmCamadas
 {
-    public partial class frmRelatorioVoto : Form
+    public partial class frmRelatorioEleicao : Form
     {
         private frmPrincipal frmPrincipal;
 
-        public frmRelatorioVoto()
-        {
-            InitializeComponent();
-        }
 
-        public frmRelatorioVoto(frmPrincipal frmPrincipal)
+        public frmRelatorioEleicao(frmPrincipal frmPrincipal)
         {
             this.frmPrincipal = frmPrincipal;
+            InitializeComponent();
         }
 
         private void frmRelatorioVoto_Load(object sender, EventArgs e)
         {
 
-            this.reportVoto.RefreshReport();
-            this.reportVoto.RefreshReport();
+            this.reportEleicao.RefreshReport();
+            this.reportEleicao.RefreshReport();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
@@ -62,11 +59,11 @@ namespace PadraoDeProjetoEmCamadas
 
                 }
                 rdr.Close();
-                ReportDataSource rds = new ReportDataSource("RelatorioVoto1", lrp);
-                this.reportVoto.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportVoto.rdlc";
-                this.reportVoto.LocalReport.DataSources.Clear();
-                this.reportVoto.LocalReport.DataSources.Add(rds);
-                this.reportVoto.RefreshReport();
+                ReportDataSource rds = new ReportDataSource("RelatorioEleicao", lrp);
+                this.reportEleicao.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportEleicao.rdlc";
+                this.reportEleicao.LocalReport.DataSources.Clear();
+                this.reportEleicao.LocalReport.DataSources.Add(rds);
+                this.reportEleicao.RefreshReport();
             }
             catch (Exception ex)
             {

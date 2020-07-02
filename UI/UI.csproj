@@ -68,6 +68,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadastroCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroCandidatos.Designer.cs">
+      <DependentUpon>frmCadastroCandidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroEleitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroEleitores.Designer.cs">
+      <DependentUpon>frmCadastroEleitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroUrna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroUrna.Designer.cs">
+      <DependentUpon>frmCadastroUrna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroVoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroVoto.Designer.cs">
+      <DependentUpon>frmCadastroVoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLocalizarEleicao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,15 +158,27 @@
     <Compile Include="frmRelatorioPessoa.Designer.cs">
       <DependentUpon>frmRelatorioPessoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRelatorioVoto.cs">
+    <Compile Include="frmRelatorioEleicao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRelatorioVoto.Designer.cs">
-      <DependentUpon>frmRelatorioVoto.cs</DependentUpon>
+    <Compile Include="frmRelatorioEleicao.Designer.cs">
+      <DependentUpon>frmRelatorioEleicao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="frmCadastroCandidatos.resx">
+      <DependentUpon>frmCadastroCandidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroEleitores.resx">
+      <DependentUpon>frmCadastroEleitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroUrna.resx">
+      <DependentUpon>frmCadastroUrna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroVoto.resx">
+      <DependentUpon>frmCadastroVoto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLocalizarEleicao.resx">
       <DependentUpon>frmLocalizarEleicao.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,8 +212,8 @@
     <EmbeddedResource Include="frmRelatorioPessoa.resx">
       <DependentUpon>frmRelatorioPessoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRelatorioVoto.resx">
-      <DependentUpon>frmRelatorioVoto.cs</DependentUpon>
+    <EmbeddedResource Include="frmRelatorioEleicao.resx">
+      <DependentUpon>frmRelatorioEleicao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -191,7 +227,7 @@
     </Compile>
     <EmbeddedResource Include="ReportEmpresa.rdlc" />
     <EmbeddedResource Include="ReportPessoa.rdlc" />
-    <EmbeddedResource Include="ReportVoto.rdlc" />
+    <EmbeddedResource Include="ReportEleicao.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MODELO.MODELOEleicao.datasource" />
     <None Include="Properties\DataSources\MODELO.MODELOEmpresa.datasource" />

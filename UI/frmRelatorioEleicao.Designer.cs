@@ -1,6 +1,6 @@
 ﻿namespace PadraoDeProjetoEmCamadas
 {
-    partial class frmRelatorioVoto
+    partial class frmRelatorioEleicao
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportVoto = new Microsoft.Reporting.WinForms.ReportViewer();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.MODELOEleicaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportEleicao = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.MODELOEleicaoBindingSource)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // reportVoto
-            // 
-            this.reportVoto.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "RelatorioVoto1";
-            reportDataSource1.Value = this.MODELOEleicaoBindingSource;
-            this.reportVoto.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportVoto.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportVoto.rdlc";
-            this.reportVoto.Location = new System.Drawing.Point(0, 0);
-            this.reportVoto.Name = "reportVoto";
-            this.reportVoto.ServerReport.BearerToken = null;
-            this.reportVoto.Size = new System.Drawing.Size(800, 450);
-            this.reportVoto.TabIndex = 0;
-            this.reportVoto.Load += new System.EventHandler(this.reportViewer1_Load);
+
             // 
             // MODELOEleicaoBindingSource
             // 
             this.MODELOEleicaoBindingSource.DataSource = typeof(MODELO.MODELOEleicao);
             // 
-            // frmRelatorioVoto
+            // reportEleicao
+            // 
+            this.reportEleicao.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource2.Name = "RelatorioVoto1";
+            reportDataSource2.Value = this.MODELOEleicaoBindingSource;
+            this.reportEleicao.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportEleicao.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportVoto.rdlc";
+            this.reportEleicao.Location = new System.Drawing.Point(0, 0);
+            this.reportEleicao.Name = "reportEleicao";
+            this.reportEleicao.ServerReport.BearerToken = null;
+            this.reportEleicao.Size = new System.Drawing.Size(800, 450);
+            this.reportEleicao.TabIndex = 0;
+            this.reportEleicao.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
+            // frmRelatorioEleicao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportVoto);
-            this.Name = "frmRelatorioVoto";
-            this.Text = "frmRelatorioVoto";
+            this.Controls.Add(this.reportEleicao);
+            this.Name = "frmRelatorioEleicao";
+            this.Text = "Relatorio Eleicao";
             this.Load += new System.EventHandler(this.frmRelatorioVoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MODELOEleicaoBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportVoto;
+        private Microsoft.Reporting.WinForms.ReportViewer reportEleicao;
         private System.Windows.Forms.BindingSource MODELOEleicaoBindingSource;
     }
 }

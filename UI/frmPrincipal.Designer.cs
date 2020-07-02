@@ -34,11 +34,15 @@
             this.pessoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eleiçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.candidatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empresaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.votoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.urnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.votoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eleitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +63,11 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pessoaToolStripMenuItem,
             this.empresaToolStripMenuItem,
-            this.eleiçãoToolStripMenuItem});
+            this.eleiçãoToolStripMenuItem,
+            this.candidatoToolStripMenuItem,
+            this.urnaToolStripMenuItem,
+            this.votoToolStripMenuItem1,
+            this.eleitorToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -67,23 +75,30 @@
             // pessoaToolStripMenuItem
             // 
             this.pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
-            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pessoaToolStripMenuItem.Text = "Pessoa";
             this.pessoaToolStripMenuItem.Click += new System.EventHandler(this.pessoaToolStripMenuItem_Click);
             // 
             // empresaToolStripMenuItem
             // 
             this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.empresaToolStripMenuItem.Text = "Empresa";
             this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem_Click);
             // 
             // eleiçãoToolStripMenuItem
             // 
             this.eleiçãoToolStripMenuItem.Name = "eleiçãoToolStripMenuItem";
-            this.eleiçãoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.eleiçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eleiçãoToolStripMenuItem.Text = "Eleição";
             this.eleiçãoToolStripMenuItem.Click += new System.EventHandler(this.eleiçãoToolStripMenuItem_Click);
+            // 
+            // candidatoToolStripMenuItem
+            // 
+            this.candidatoToolStripMenuItem.Name = "candidatoToolStripMenuItem";
+            this.candidatoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.candidatoToolStripMenuItem.Text = "Candidato";
+            this.candidatoToolStripMenuItem.Click += new System.EventHandler(this.candidatoToolStripMenuItem_Click);
             // 
             // configToolStripMenuItem
             // 
@@ -100,28 +115,48 @@
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
-            
             // 
             // pessoasToolStripMenuItem
             // 
             this.pessoasToolStripMenuItem.Name = "pessoasToolStripMenuItem";
-            this.pessoasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pessoasToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.pessoasToolStripMenuItem.Text = "Pessoas";
             this.pessoasToolStripMenuItem.Click += new System.EventHandler(this.pessoasToolStripMenuItem_Click);
             // 
             // empresaToolStripMenuItem1
             // 
             this.empresaToolStripMenuItem1.Name = "empresaToolStripMenuItem1";
-            this.empresaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.empresaToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.empresaToolStripMenuItem1.Text = "Empresa";
             this.empresaToolStripMenuItem1.Click += new System.EventHandler(this.empresaToolStripMenuItem1_Click);
             // 
             // votoToolStripMenuItem
             // 
             this.votoToolStripMenuItem.Name = "votoToolStripMenuItem";
-            this.votoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.votoToolStripMenuItem.Text = "Voto";
+            this.votoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.votoToolStripMenuItem.Text = "Eleicao";
             this.votoToolStripMenuItem.Click += new System.EventHandler(this.votoToolStripMenuItem_Click);
+            // 
+            // urnaToolStripMenuItem
+            // 
+            this.urnaToolStripMenuItem.Name = "urnaToolStripMenuItem";
+            this.urnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.urnaToolStripMenuItem.Text = "Urna";
+            this.urnaToolStripMenuItem.Click += new System.EventHandler(this.urnaToolStripMenuItem_Click);
+            // 
+            // votoToolStripMenuItem1
+            // 
+            this.votoToolStripMenuItem1.Name = "votoToolStripMenuItem1";
+            this.votoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.votoToolStripMenuItem1.Text = "Voto";
+            this.votoToolStripMenuItem1.Click += new System.EventHandler(this.votoToolStripMenuItem1_Click);
+            // 
+            // eleitorToolStripMenuItem
+            // 
+            this.eleitorToolStripMenuItem.Name = "eleitorToolStripMenuItem";
+            this.eleitorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eleitorToolStripMenuItem.Text = "Eleitor";
+            this.eleitorToolStripMenuItem.Click += new System.EventHandler(this.eleitorToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -154,5 +189,9 @@
         private System.Windows.Forms.ToolStripMenuItem pessoasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empresaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem votoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem candidatoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem urnaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem votoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eleitorToolStripMenuItem;
     }
 }

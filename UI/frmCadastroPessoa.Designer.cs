@@ -248,7 +248,7 @@
             // frmCadastroPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(499, 370);
+            this.ClientSize = new System.Drawing.Size(499, 228);
             this.Controls.Add(this.btn_remover_img);
             this.Controls.Add(this.btn_buscar_img);
             this.Controls.Add(this.lbl_img);

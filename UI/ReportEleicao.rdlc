@@ -417,7 +417,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>RelatorioVoto1</DataSetName>
+        <DataSetName>RelatorioEleicao</DataSetName>
         <Top>0.76412cm</Top>
         <Left>1.84953cm</Left>
         <Height>1.2cm</Height>
@@ -495,7 +495,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="RelatorioVoto1">
+    <DataSet Name="RelatorioEleicao">
       <Query>
         <DataSourceName>MODELO</DataSourceName>
         <CommandText>/* Local Query */</CommandText>

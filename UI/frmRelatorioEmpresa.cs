@@ -17,14 +17,12 @@ namespace PadraoDeProjetoEmCamadas
     {
         private frmPrincipal frmPrincipal;
 
-        public frmRelatorioEmpresa()
-        {
-            InitializeComponent();
-        }
+        
 
         public frmRelatorioEmpresa(frmPrincipal frmPrincipal)
         {
             this.frmPrincipal = frmPrincipal;
+            InitializeComponent();
         }
 
         private void frmRelatorioEmpresa_Load(object sender, EventArgs e)
@@ -57,7 +55,7 @@ namespace PadraoDeProjetoEmCamadas
                 }
                 rdr.Close();
                 ReportDataSource rds = new ReportDataSource("RelatorioEmpresa", lrp);
-                this.reportEmpresa.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportPessoa.rdlc";
+                this.reportEmpresa.LocalReport.ReportEmbeddedResource = "PadraoDeProjetoEmCamadas.ReportEmpresa.rdlc";
                 this.reportEmpresa.LocalReport.DataSources.Clear();
                 this.reportEmpresa.LocalReport.DataSources.Add(rds);
                 this.reportEmpresa.RefreshReport();
