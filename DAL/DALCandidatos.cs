@@ -25,9 +25,9 @@ namespace DAL
             {
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = this.conexao.ObjetoConexao;
-                cmd.CommandText = "INSERT INTO candidato (idpessoa, ideleicao, idempresa, numero, slogan, descricao, foto)" +
-                    "VALUES (@idpessoa, @ideleicao, @idempresa, @numero, @slogan, @descricao, @foto);" +
-                    "SELECT MAX(ID) FROM candidato;";
+                cmd.CommandText = "INSERT INTO candidatos (idpessoa, ideleicao, idempresa, numero, slogan, descricao, fotoblog)" +
+                    "VALUES (@idpessoa, @ideleicao, @idempresa, @numero, @slogan, @descricao, @fotoblog);" +
+                    "SELECT MAX(ID) FROM candidatos;";
                 cmd.Parameters.AddWithValue("@idpessoa", modelo.Idpessoa);
                 cmd.Parameters.AddWithValue("@ideleicao", modelo.Ideleicao);
                 cmd.Parameters.AddWithValue("@idempresa", modelo.Idempresa);

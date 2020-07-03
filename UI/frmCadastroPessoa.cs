@@ -195,7 +195,7 @@ namespace PadraoDeProjetoEmCamadas
                 p.CarregaImagem(fotoPessoa);
 
                 bllpessoa.Incluir(p);
-                TXTId.Text = p.Id.ToString(); ;
+                TXTId.Text = p.Id.ToString(); 
                 MessageBox.Show("Usuario inserido com sucesso id:" + p.Id);
 
                 limparCampos();

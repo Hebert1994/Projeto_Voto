@@ -9,11 +9,11 @@ namespace DAL
 {
     public class DadosDaConexao
     {
-        private string server = "fdb20.agilityhoster.com";
+        private string server = "localhost";
         private string port = "3306";
-        private string user = "3471518_projeto";
-        private string pass = "f8JH1E]TW";
-        private string database = "3471518_projeto";
+        private string user = "root";
+        private string pass = "";
+        private string database = "projeto_voto";
 
         public string StringDeConexao
         {

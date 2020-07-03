@@ -24,7 +24,7 @@ namespace DAL
             {
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = this.conexao.ObjetoConexao;
-                cmd.CommandText = "INSERT INTO voto (ideleicao, idurna, idpessoa, numerovoto)" +
+                cmd.CommandText = "INSERT INTO voto (IDELEICAO, IDURNA, IDPESSOA, NUMEROVOTO)" +
                     "VALUES ( @ideleicao, @idurna, @idpessoa, @numerovoto);" +
                     "SELECT MAX(ID) FROM voto;";
                 cmd.Parameters.AddWithValue("@ideleicao", modelo.Ideleicao);
@@ -49,13 +49,6 @@ namespace DAL
             }
 
         }
-
-
-
-
-
-
-
 
     }
 }

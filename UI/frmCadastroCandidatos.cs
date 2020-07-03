@@ -56,9 +56,7 @@ namespace PadraoDeProjetoEmCamadas
 
 
                 bllcandidato.Incluir(p);
-                MessageBox.Show("Candidato inserido com sucesso id:");
-
-
+                MessageBox.Show("Candidato inserido com sucesso " + p.Ideleicao);
                 
 
             }
